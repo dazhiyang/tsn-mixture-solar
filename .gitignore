@@ -1,0 +1,20 @@
+.DS_Store
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rapp.history
+*.RData
+*.Rhistory
+
+# Specific request
+Data/Results/
+Data/Sensitivity/
+tex/
+
+# TeX generated files
+tex/*.aux
+tex/*.log
+tex/*.out
+tex/*.toc
+tex/*.pdf

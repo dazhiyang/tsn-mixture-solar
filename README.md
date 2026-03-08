@@ -35,3 +35,12 @@ Manuscript and output files:
 1. Ensure the `dir0` path in the R scripts is set to your local project root.
 2. The analysis relies on data stored in `Data/Sample`, but intermediate results should be stored locally in `Data/Results` (which is not tracked by Git).
 3. Source `0.Functions.R` before running other analysis scripts.
+
+## Data and Contact
+
+**Author:** Dazhi Yang  
+**Affiliation:** School of Electrical Engineering and Automation, Harbin Institute of Technology  
+**Email:** [dazhiyang.nus@gmail.com](mailto:dazhiyang.nus@gmail.com)  
+
+---
+*Note: This repository is specifically tailored for the study of three-component TSN mixture models and their application in solar radiation analysis.*

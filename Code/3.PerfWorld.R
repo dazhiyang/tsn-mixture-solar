@@ -52,7 +52,7 @@ for (i in seq_along(files))
     mutate(bic = as.numeric(bic)) %>%
     mutate(was = latex_sci_to_numeric(was))
   dat <- data.matrix(data.perf[, 5:8])
-  for (j in seq_along()(mixtures))
+  for (j in seq_along(mixtures))
   {
     for (k in seq_along(metrics))
     {
@@ -71,7 +71,7 @@ close(pb)
 #################################################################################
 continents <- c("Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America", "Island")
 data.plot.box <- NULL
-for (l in seq_along()(continents))
+for (l in seq_along(continents))
 {
   select <- which(locations$Continent == continents[l])
   names <- locations$stn[select]

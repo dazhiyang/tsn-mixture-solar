@@ -22,7 +22,7 @@ dir0 <- "/Users/dyang/Dropbox/Working papers/distribution"
 dir.data <- "/Volumes/Macintosh Research/Data/Separation/tibbles"
 
 # source the necessary functions for fitting mixture models
-source(file.path(dir0, "Code/functions.R"))
+source(file.path(dir0, "Code/0.Functions.R"))
 ################################################################################
 
 # read the metadata of sites

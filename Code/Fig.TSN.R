@@ -12,21 +12,8 @@ invisible(lapply(libs, library, character.only = TRUE))
 ################################################################################
 # global input
 ################################################################################
-# Function to calculate truncated skew normal PDF
-dtsn <- function(x, xi, omega, alpha, a, b) {
-  # Calculate numerator: original skew normal PDF
-  numerator <- dsn(x, xi = xi, omega = omega, alpha = alpha)
-
-  # Calculate denominator: normalizing constant
-  # Using psn (CDF of skew normal) for the bounds
-  denominator <- psn(b, xi = xi, omega = omega, alpha = alpha) -
-    psn(a, xi = xi, omega = omega, alpha = alpha)
-
-  # Truncated PDF
-  pdf <- ifelse(x >= a & x <= b, numerator / denominator, 0)
-
-  return(pdf)
-}
+# source the necessary functions for fitting mixture models
+source(file.path(dir0, "Code/0.Functions.R"))
 
 plot.size <- 8
 line.size <- 0.3

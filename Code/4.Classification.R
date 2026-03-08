@@ -6,7 +6,7 @@
 ################################################################################
 
 rm(list = ls(all = TRUE))
-libs <- c("dplyr", "lubridate", "ggplot2", "ComplexHeatmap", "viridis", "raster")
+libs <- c("dplyr", "lubridate", "sn", "ggplot2", "ComplexHeatmap", "viridis", "raster")
 invisible(lapply(libs, library, character.only = TRUE))
 
 ################################################################################

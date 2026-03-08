@@ -12,16 +12,15 @@ invisible(lapply(libs, library, character.only = TRUE))
 ################################################################################
 # global input
 ################################################################################
-# source the necessary functions for fitting mixture models
-source(file.path(dir0, "Code/0.Functions.R"))
-
 plot.size <- 8
 line.size <- 0.3
 point.size <- 0.05
 legend.size <- 0.4
 text.size <- plot.size * 5 / 14
-# dir0 <- "/Users/dyang/Dropbox/Working papers/QC"
 dir0 <- "/Users/seryangd/Library/CloudStorage/Dropbox/Working papers/distribution"
+# source the necessary functions for fitting mixture models
+source(file.path(dir0, "Code/0.Functions.R"))
+
 ################################################################################
 # Parameters
 xi <- 0.5

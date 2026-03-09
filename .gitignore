@@ -18,3 +18,8 @@ tex/*.log
 tex/*.out
 tex/*.toc
 tex/*.pdf
+
+# Document files to exclude
+highlights.docx
+declarationStatement.docx
+

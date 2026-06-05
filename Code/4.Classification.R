@@ -14,7 +14,7 @@ invisible(lapply(libs, library, character.only = TRUE))
 ################################################################################
 plot.size <- 8
 line.size <- 0.2
-point.size <- 1
+point.size <- 1.4
 legend.size <- 0.4
 text.size <- plot.size * 5 / 14
 # dir0 <- "/Users/dyang/Dropbox/Working papers/distribution"
@@ -33,7 +33,7 @@ locations <- read.csv("location.csv", header = TRUE)
 
 # access the folder contained arranged data from 126 stations
 setwd(file.path(dir0, "Data/Results"))
-files <- dir()
+files <- dir(pattern = "\\.RData$", ignore.case = TRUE)
 
 stations <- list()
 pb <- txtProgressBar(max = length(files), style = 3) # progress bar
@@ -107,7 +107,7 @@ create_quantile_colors <- function(matrix, n_colors = 256) {
 col_fun <- create_quantile_colors(dist_matrix)
 
 # Create symmetric group labels
-group_labels <- c("C4", "C4", "C1", "C5", "C2")
+group_labels <- c("C4", "C3", "C1", "C5", "C2")
 group_colors <- ggthemes::colorblind_pal()(8)[2:6] # Same colors for both sides
 
 # simple version
@@ -202,7 +202,7 @@ kp.color30 <- c(
 
 loc <- locations %>%
   mutate(RCC = class)
-loc$RCC <- factor(loc$RCC, levels = c(1:5))
+loc$RCC <- factor(loc$RCC, levels = 1:5, labels = paste0("C", 1:5))
 
 p <- ggplot() +
   geom_raster(data = kgc, aes(lon, lat, fill = class)) +
@@ -217,7 +217,7 @@ p <- ggplot() +
 
 p
 
-setwd(file.path(dir0, "tex"))
+setwd(file.path(dir0, "Revision1"))
 ggsave(filename = "mapStn.pdf", plot = p, width = 85, height = 90, unit = "mm")
 
 

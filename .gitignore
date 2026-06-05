@@ -8,6 +8,7 @@
 *.Rhistory
 
 # Specific request
+Revision1/
 Data/Results/
 Data/Sensitivity/
 tex/
@@ -22,4 +23,5 @@ tex/*.pdf
 # Document files to exclude
 highlights.docx
 declarationStatement.docx
+title.docx
 

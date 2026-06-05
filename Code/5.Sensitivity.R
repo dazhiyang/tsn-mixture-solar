@@ -1,5 +1,5 @@
 ################################################################################
-# This code is written by Dazhi Yang with Antigravity
+# This code is written by Dazhi Yang
 # School of Electrical Engineering and Automation
 # Harbin Institute of Technology
 # emails: yangdazhi.nus@gmail.com
